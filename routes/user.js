@@ -5,7 +5,7 @@ const db = require('../config/database');
 const pokemon = require('./pokemon');
 
 
-user.post("/", async (req, res, next)=>{
+user.post("/signin", async (req, res, next)=>{
 
     const {user_name, user_mail, user_password} = req.body;
 
